@@ -44,13 +44,14 @@
   		font-style: italic;
   		font-size: 90px;
   		line-height: 90px;
-  		margin-bottom: 25px;
+  		margin-top: 40px;
 	}
 }
 
-.outro
+.outro p
 {
 	color:white;
+	font-size: 16px;
 }
 
 
@@ -59,7 +60,9 @@
   position: relative;
   display: block;
   max-width: 650px;
+  height: 200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;

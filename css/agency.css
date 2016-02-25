@@ -266,7 +266,7 @@ header .intro-text .intro-heading {
   	font-style: italic;
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 75px;
   }
   header .intro-text .intro-heading {
     font-family: "Eras ITC", "Eras Medium ITC",  sans-serif;
@@ -274,7 +274,7 @@ header .intro-text .intro-heading {
   	font-style: italic;
   	font-size: 63px;
     line-height: 63px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
   }
 }
 section {
