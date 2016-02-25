@@ -236,8 +236,7 @@ header {
   color: white;
 }
 header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 75px;
 }
 header .intro-text .intro-lead-in {
   font-family: "Eras ITC", "Eras Medium ITC",  sans-serif;
