@@ -1,0 +1,54 @@
+.black-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+	width: 100%;
+	height:100%;
+}
+.right-stuff
+{
+	float: right;
+}
+.left-stuff
+{
+	float: left;
+}
+
+
+.round-img{
+	margin: auto;
+	width:260px;
+	height:260px;
+	border-radius:50%;
+	overflow: hidden;
+}
+.round-img img{
+	width:200px;
+	border: 0px
+}
+
+
+.shrugs
+{
+  font-family: "Aclonica";
+  font-style: italic;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	.shrugs
+	{
+  		font-family: "Aclonica";
+  		font-style: italic;
+  		font-size: 90px;
+  		line-height: 90px;
+  		margin-bottom: 25px;
+	}
+}
+
+.outro
+{
+	color:white;
+}
