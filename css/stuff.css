@@ -57,7 +57,7 @@
   position: relative;
   display: block;
   max-width: 650px;
-  height: 200px;
+  height: 300px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -99,6 +99,9 @@
   opacity: 1;
 }
 @media (min-width: 768px) {
+	.portfolio-box {
+		height: 200px;
+	}
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
   }
