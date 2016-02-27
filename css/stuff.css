@@ -13,9 +13,20 @@
 	border-radius:50%;
 	overflow: hidden;
 }
-.round-img img{
+.round-img div{
 	width:200px;
-	border: 0px
+	border: 0px;
+	overflow: hidden;
+	position: relative;
+	left: 30px;
+}
+
+.round-img div img{
+	border: 0px;
+	height:260px;
+	max-width: none;
+	position: relative;
+	left: -45px;
 }
 
 .shrugs
