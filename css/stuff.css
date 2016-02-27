@@ -54,6 +54,10 @@
 	{
 		float: left;
 	}
+	.stuff{
+		width: 260px;
+		text-align: center; 
+	}
 }
 
 .outro p
