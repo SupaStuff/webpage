@@ -1,0 +1,49 @@
+ID, CATEGORY, PROJECT_NAME, INTRO, DESCRIPTION, DATE, FOR, URL
+				<div class="col-lg-4 col-sm-6">
+                    <a href="#ID" class="portfolio-box" data-toggle="modal">
+                        <img src="img/portfolio/ID.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    CATEGORY
+                                </div>
+                                <div class="project-name">
+                                    PROJECT_NAME
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+	<!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="ID" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>PROJECT_NAME</h2>
+                            <p class="item-intro text-muted">INTRO</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/laser.png" alt="">
+                            <p>DESCRIPTION</p>
+                            <ul class="list-inline">
+                                <li>Date: DATE</li>
+                                <li>For: FOR</li>
+                                <li>Category: CATEGORY</li>
+                            </ul>
+                            <a href="URL" class="btn btn-primary">View Project</a>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div
