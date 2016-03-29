@@ -224,7 +224,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/blurryCode.png');
+  background-image: url('../img/card/blurryCode.png');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
