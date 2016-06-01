@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{ifthen}
+\usepackage{soul}
+
+\begin{document}
+%coursenum, name, prerequistes, credits, transferred, grade, color
+
+\newcommand{\coursenumstyle}[1]{\fontsize{8pt}{1em}\bfseries{#1}}
+\newcommand{\coursenamestyle}[1]{\fontsize{8pt}{1em}\textit{#1}}
+\newcommand{\prestyle}[1]{\fontsize{8pt}{1em}Pre: #1}
+\newcommand{\transferstyle}[1]{\fontsize{8pt}{1em}\underline{#1}}
+\newcommand{\creditstyle}[1]{{\fontsize{8pt}{1em}#1 cr.}}
+\newcommand{\gradestyle}[1]{\fontsize{8pt}{1em}\hl{#1}}
+
+
+\newcommand{\courseNum}[7]{%
+  \ifthenelse{\equal{#7}{}}{}{\cellcolor{#7}}
+	  \begin{tabular}{@{}l@{}@{}r@{}}
+		\coursenumstyle{#1} & \coursenamestyle{#2} \\
+		\prestyle{#3} & \transferstyle{#5} \\
+		\creditstyle{#4} & \gradestyle{#6}
+  \end{tabular}
+}
+
+\newcommand{\calcI}{
+  \courseNum{MATH20100}{Calculus I}{Math 19500 (C min)}{3}{MAT 1500}{A}{lightgray}
+}
+\newcommand{\calcII}{
+  \courseNum{MATH20200}{Calculus II}{Math 20100 (C min)}{3}{MAT 1600}{A}{lightgray}
+}
+\newcommand{\calcIII}{
+  \courseNum{MATH20300}{Calculus III}{Math 20200 (C min)}{4}{}{A}{lightgray}
+}
+\newcommand{\linearA}{
+  \courseNum{MATH34600}{Elements of Linear Algebra}{Math 20300}{3}{}{C}{lightgray}
+}
+
+\newcommand{\mat}[1]{
+  \ifthenelse{\equal{#1}{201}}{\calcI}
+  {
+	\ifthenelse{\equal{#1}{202}}{\calcII}
+	{	  
+	\ifthenelse{\equal{#1}{203}}{\calcIII}
+	{
+	\ifthenelse{\equal{#1}{346}}{\linearA}
+	}
+  }
+  }
+}
+
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\mat{201} & \multicolumn{2}{c|}{2} & 3 & \multicolumn{2}{c|}{4} & 5 \\
+\hline
+\mat{202} & \multicolumn{2}{c|}{2} & 3 & \multicolumn{2}{c|}{4} & 5\\
+\hline
+\mat{203} & \multicolumn{2}{c|}{2} & 3 & \multicolumn{2}{c|}{4} & 5\\
+\hline
+\mat{346} & 2 & 3 & 4 & 5 & \multicolumn{2}{c|}{6} \\
+\hline
+1 & \multicolumn{2}{c|}{2} & 3 & \multicolumn{2}{c|}{4} & 5\\
+\hline
+\multicolumn{2}{|c|}{1} & 2 & 3 & 4 & 5 & 6  \\
+\hline
+\multicolumn{2}{|c|}{1} & \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{3} & 4 \\
+\hline
+\multicolumn{2}{|c|}{1} & \multicolumn{2}{c|}{2} & 3 & 4 & 5  \\
+\hline
+\end{tabular}
+\end{document}
