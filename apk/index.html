@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My unofficial apks</title>
+</head>
+<body>
+    <ul id="theList">
+    </ul>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script>
+
+$(document).ready(function(){
+    var url = "https://spreadsheets.google.com/feeds/cells/1Kvmm3iW8ZJr-YZwJCxC3HI6piXVeuWcXHMoC5FtJFUY/od6/public/values?alt=json-in-script&callback=?";
+    $.getJSON(url,{}, function (d) { 
+        var f = d.feed.entry.map(function(e){return e.content.$t;}).slice(2);
+        
+        for(var i=0; i<f.length; i+=2)
+        {
+            $("#theList").append("<li><a href='"+f[i+1]+"'>"+f[i]+"</a></li>");
+        }
+    });
+});
+</script>
+</body>
+</html>
