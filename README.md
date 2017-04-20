@@ -1,3 +1,3 @@
 #webpage
 
-[![pdf](docs/Resume-JeanPena.pdf)](docs/Resume-JeanPena.pdf)
+[pdf](docs/Resume-JeanPena.pdf)
